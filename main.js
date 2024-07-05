@@ -1,4 +1,5 @@
-import './style.css'
+import './style.css';
+
 
 const playBtn = document.querySelector("#playBtn");
 const song = document.querySelector('#song');

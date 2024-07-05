@@ -30,7 +30,9 @@ body{
     content: '';
     width: 30px;
     height: 30px;
-    background-color:#fce7f3;
+    /* background-color:#fce7f3; */
+    background-color:#ee5daf;
+
     position: absolute;
     transform: translate(-50%,-50%);
     top: 50%;
