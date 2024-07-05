@@ -1,0 +1,66 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css');
+@import url('./node_modules/animate.css/animate.css');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+  background-image:linear-gradient(to left, rgb(243, 96, 120),rgb(190, 107, 146));
+}
+
+.circle{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    padding: 10px;
+    margin: auto;
+    position: relative;
+
+}
+.rotate{
+  animation: rotate 2000ms linear infinite both;
+
+}
+
+.image{
+    border-radius: 50%;
+}
+
+.circle::before{
+    content: '';
+    width: 30px;
+    height: 30px;
+    background-color:#fce7f3;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    border-radius: 50%;
+}
+.fill-color{
+ /* background-color: #f472b6;  */
+}
+
+@keyframes rotate{
+    from{
+        transform: rotate(0);
+    }
+    to{
+        transform: rotate(360deg);
+        
+    }
+}
+
+.song-name{
+    animation: song-name 5s linear infinite both;
+    
+  }
+  @keyframes song-name{
+    from{
+      transform: translateX(150px);
+    }
+    to{
+      transform: translateX(-250px);
+      
+    }
+  }

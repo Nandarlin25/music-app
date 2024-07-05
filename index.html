@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Primary Meta Tags -->
+<title>Music</title>
+<meta name="title" content="Music" />
+<meta name="description" content="" />
+
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://mms-it.com" />
+<meta property="og:title" content="Music" />
+<meta property="og:description" content="" />
+<meta property="og:image" content="https://img.freepik.com/free-photo/abstract-watercolor-guitar-exploding-with-colorful-motion-generated-by-ai_188544-19725.jpg" />
+
+<!-- Twitter -->
+<meta property="twitter:card" content="summary_large_image" />
+<meta property="twitter:url" content="https://mms-it.com" />
+<meta property="twitter:title" content="Music" />
+<meta property="twitter:description" content="" />
+<meta property="twitter:image" content="https://img.freepik.com/free-photo/abstract-watercolor-guitar-exploding-with-colorful-motion-generated-by-ai_188544-19725.jpg" />
+
+<!-- Meta Tags Generated with https://metatags.io -->
+    <title>Music Player</title>
+    <link rel="stylesheet" href="./style.css">
+  </head>
+  <body>
+    <main>
+      <div class="w-[400px] h-[550px] bg-pink-100 mx-auto mt-10">
+        <div class="flex justify-between p-5">
+          <button><i class="fa-solid fa-chevron-down text-xl text-pink-500"></i></button>
+          <button><i class="fa-solid fa-bars text-xl text-pink-500"></i>
+          </button>
+        </div>
+        <div class="px-12 py-4 circle">
+          <img class="image" src="https://yt3.googleusercontent.com/yvJUzj1sZRTDitELleKRsPyeFbklrVuC1Dz84ZGYwgGnKMi3C4I_TPTOWmfKKGmaE4GHVGDa=s900-c-k-c0x00ffffff-no-rj" alt="">
+         </div>         
+
+         <div class="flex justify-between items-center p-12 -mt-5 overflow-hidden">
+        <h4 class="song-name text-2xl text-pink-500 font-medium ">အားတင်းပါ_သူငယ်ချင်း</h4>
+        </div>
+
+        <p class="-mt-12 px-12 text-lg text-pink-500">Group Song</p>
+
+        <div class="mt-2 ml-12">
+          <audio id="song" src="./audios/အားတင်းပါ___ဝမ်းနည်းစရာ_ကြုံလာတိုင်း_အရှုံးမပေးနဲ့(MP3_160K).mp3"></audio>
+        </div>
+
+        <div class="flex justify-center items-center gap-10 mt-10 ">
+          <button id="changeList"><i id="list" class="fa-solid fa-repeat text-2xl text-pink-500"></i></button>
+          <button><i class="fa-solid fa-backward text-2xl text-pink-500"></i></button>
+          <button id="playBtn" class="size-16 bg-pink-400 rounded-full flex justify-center items-center "><i class="fa-solid fa-play text-3xl text-slate-900" id="changeIcon"></i></button>
+          <button><i class="fa-solid fa-forward text-2xl text-pink-500"></i></button>
+          <button id="heart" class="fill-color" >
+            <i class="fa-regular fa-heart text-2xl text-pink-500" id="love"></i>
+          </button>
+        </div>
+      
+      </div>
+
+    </main>
+
+
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
