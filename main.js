@@ -9,7 +9,11 @@ const changeList = document.querySelector("#changeList");
 const list = document.querySelector("#list");
 const heart = document.querySelector("#heart");
 const love = document.querySelector("#love");
+const sideBarBtn = document.querySelector("#sideBarBtn");
 
+sideBarBtn.addEventListener("click",() => {
+    // console.log("click sidebar");
+})
 
 // console.dir(song);
 
@@ -47,8 +51,13 @@ changeList.addEventListener("click",() => {
 });
 
 heart.addEventListener("click",() => {
-    // console.log("love");
-    heart.classList.toggle("fill-color");
+    if(love.classList.contains("fa-regular","fa-heart")){
+        love.classList.remove("fa-regular","fa-heart"); 
+        love.classList.add("fa-solid","fa-heart");
+    }else{
+        love.classList.remove("fa-solid","fa-heart");
+        love.classList.add("fa-regular","fa-heart"); 
+    }
 
 })
 
